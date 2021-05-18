@@ -7,8 +7,8 @@ class ActiveUser:
         self.username = username
         self.user = InstagramUserExtended(username=username, sessionid=session_id)
 
-    def get_user_posts(self):
-        return self.get_user_posts()
+    def get_user_posts_descriptions(self):
+        return self.user.posts_texts
 
 
 class InstagramUserExtended(instagramy.InstagramUser):
