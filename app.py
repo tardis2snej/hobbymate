@@ -1,20 +1,28 @@
 from flask import *
 import analysis
+import os
 
 app = Flask(__name__)
 
 
 @app.route('/', methods=['GET'])
-def hello_world():
+def index():
     return render_template('index.html')
 
 
 @app.route('/', methods=['POST'])
-def hello_world_post():
+def do_analysis():
     print("Post method called")
-    analysis.compare_users(request.form['first-username'], request.form['second-username'])
-    return render_template('index.html')
+    try:
+        prediction, similarities = analysis.compare_users(request.form['first-username'], request.form['second-username'])
+        return render_template('index.html', prediction=prediction, similarities=similarities.keys())
+    except:
+        print('Error')
+        flash('Something gone wrong! Check that you entered usernames right and try again!')
+        return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
+    app.secret_key = os.urandom(24)
     app.run(debug=True)
+    # analysis.compare_users('tardis2snej', 'minortismay')
