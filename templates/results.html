@@ -1,0 +1,58 @@
+<!-- explore -->
+<div id="explore" class="filter">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">EXPLORE</div>
+                <h2>Instagram Page Statistics</h2>
+                <div style="text-align: center">
+                    {% if prediction is defined %}
+                        <b>
+                        {% if prediction == 1 %}
+                            You have a lot in common with this user!
+                        {% elif prediction == 2 %}
+                            You have a chance to be friends with this user!
+                        {% elif prediction == 3 %}
+                            There are not much common between you, but you can always try!
+                        {% elif prediction == 4 %}
+                            Sorry, we didn't find any common interests :(
+                        {% else %}
+                            Unknown result received
+                        {% endif %}
+                        </b>
+                    {% endif %}
+
+                    <br>
+                    {% if similarities is defined %}
+                        <div class="row">
+                            <div class="col-lg-12">
+                                Your common words:
+                                    <!-- Filter -->
+                                    <div class="button-group filters-button-group">
+                                        {% for value in similarities %}
+                                            <a class="button" data-filter=".{{ value }}"><span>{{ value }}</span></a>
+                                        {% endfor %}
+                                        <a class="button is-checked" data-filter="*"><span>show all</span></a>
+                                    </div> <!-- end of button group -->
+
+                                <div class="grid" style="text-align: center">
+                                    {% for post in posts %}
+                                        <div class="element-item {{ post['keywords'] }}">
+                                              <blockquote class="instagram-media" data-instgrm-version="2">
+                                                <a href="{{ post['post_url'] }}"></a>
+                                              </blockquote>
+                                        </div>
+                                    {% endfor %}
+                                </div> <!-- end of grid -->
+                                <!-- end of filter -->
+                            </div> <!-- end of col -->
+                        </div> <!-- end of row -->
+                    {% endif %}
+                    <form action="/#get-started" method="get" >
+                        <input class="btn-submit-lg page-scroll" type="submit" value="Try Again" style="align-self: center">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

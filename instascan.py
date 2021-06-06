@@ -61,3 +61,13 @@ def filter_words(words):
             filtered.append(word)
 
     return filtered
+
+
+def get_posts_with_keywords(keywords, user):
+    session = Session()
+    user = ActiveUser(user, session.get_session_id())
+
+    user_posts = user.get_posts_with_keywords(keywords)
+    session.end_session()
+
+    return user_posts

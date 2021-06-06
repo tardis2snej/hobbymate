@@ -13,7 +13,10 @@ def compare_users(user1, user2):
 
     similarities = get_similarities(keywords1, keywords2)
     prediction = calculate_prediction(keywords1, keywords2)
-    return prediction, similarities
+
+    interesting_posts = instascan.get_posts_with_keywords(similarities, user2)
+
+    return prediction, similarities, interesting_posts
 
 
 def calculate_prediction(keywords1, keywords2):

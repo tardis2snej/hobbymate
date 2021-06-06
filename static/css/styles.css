@@ -1386,8 +1386,8 @@ input[type='checkbox'] {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	width: 50%;
-	background-color: #000; /* to hide 1px white margin in IE */
+	/*width: 50%;*/
+	background-color: white; /* to hide 1px white margin in IE */
 }
 
 .filter .element-item img {
@@ -1993,7 +1993,7 @@ a:hover.back-to-top {
 
 	/* Projects */
 	.filter .element-item {
-		width: 25%;
+		/*width: 25%;*/
 	}
 
 	.filter .element-item .element-item-overlay {
@@ -2378,8 +2378,8 @@ a:hover.back-to-top {
 
 	/* Projects */
 	.filter .element-item {
-		width: 17.3125rem; /* to eliminate grid overflow problem on hard refresh */
-		height: 16.875rem;
+		width: 350px; /* to eliminate grid overflow problem on hard refresh */
+		height: 550px;
 	}
 
 	.filter .element-item .element-item-overlay span { 
