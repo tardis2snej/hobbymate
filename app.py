@@ -14,12 +14,14 @@ def index():
 def do_analysis():
     print("Post method called")
     try:
-        prediction, similarities, posts = analysis.compare_users(request.form['first-username'], request.form['second-username'])
+        first_username = Markup(request.form['first-username'])
+        second_username = Markup(request.form['second-username'])
+        prediction, similarities, posts = analysis.compare_users(first_username, second_username)
         return render_template('analysis.html', prediction=prediction, similarities=similarities.keys(), posts=posts)
     except Exception as e:
         print(e)
         flash('Something gone wrong! Check that you entered usernames right and try again!')
-        return redirect(url_for('index'))
+        return render_template('index.html')
 
 
 if __name__ == '__main__':
