@@ -755,6 +755,12 @@ input[type='checkbox'] {
 	background-color: #b5bcc4;
 	opacity: 0.2;
 }
+
+.items-vertical-divider {
+	height: 100%;
+	width: 1px;
+	background-color: #b5bcc4;
+}
 /* end of dropdown menu */
 
 .navbar-custom .social-icons {
