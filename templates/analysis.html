@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
-    {% block navbar %} {% include 'analysis-navbar.html' %} {% endblock %}
-    {% block header %} {% include 'header-image.html' %} {% endblock %}
+    {% block menu %}
+        {% include 'menu-short.html' %}
+    {% endblock %}
+
+    {% block header %}
+        {% include 'header-image.html' %}
+    {% endblock %}
+
     {% block body %}
         {% include 'results.html' %}
     {% endblock %}

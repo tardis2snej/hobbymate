@@ -1,4 +1,3 @@
-<!-- explore -->
 <div id="explore" class="filter">
     <div class="container">
         <div class="row">
@@ -21,39 +20,41 @@
                         {% endif %}
                         </b>
                     {% endif %}
-
                     <br>
+
                     {% if similarities is defined %}
                         <div class="row">
                             <div class="col-lg-12">
                                 Your common words:
-                                    <!-- Filter -->
-                                    <div class="button-group filters-button-group">
-                                        {% for value in similarities %}
-                                            <a class="button" data-filter=".{{ value }}"><span>{{ value }}</span></a>
-                                        {% endfor %}
-                                        <a class="button is-checked" data-filter="*"><span>show all</span></a>
-                                    </div> <!-- end of button group -->
+                                <!-- Filter buttons -->
+                                <div class="button-group filters-button-group">
+                                    {% for value in similarities %}
+                                        <a class="button" data-filter=".{{ value }}"><span>{{ value }}</span></a>
+                                    {% endfor %}
+                                    <a class="button is-checked" data-filter="*"><span>show all</span></a>
+                                </div>
 
-                                    <div class="paginator" onclick="pagination(event)"></div>
+                                <!-- Pages -->
+                                <div class="paginator" onclick="pagination(event)"></div>
 
-                                    <div class="page">
-                                        <div style="text-align: center">
-                                            {% for post in posts %}
-                                                <div data-num={{loop.index}} class="num" >
-                                                    <div class="element-item {{ post['keywords'] }}">
-                                                          <blockquote class="instagram-media" data-instgrm-version="2">
-                                                            <a href="{{ post['post_url'] }}"></a>
-                                                          </blockquote>
-                                                    </div>
+                                <!-- Instagram posts -->
+                                <div class="page">
+                                    <div>
+                                        {% for post in posts %}
+                                            <div data-num={{loop.index}} class="num" >
+                                                <div class="element-item {{ post['keywords'] }}">
+                                                      <blockquote class="instagram-media" data-instgrm-version="2">
+                                                        <a href="{{ post['post_url'] }}"></a>
+                                                      </blockquote>
                                                 </div>
-                                            {% endfor %}
-                                        </div> <!-- end of grid -->
+                                            </div>
+                                        {% endfor %}
                                     </div>
-                                <!-- end of filter -->
-                            </div> <!-- end of col -->
-                        </div> <!-- end of row -->
+                                </div>
+                            </div>
+                        </div>
                     {% endif %}
+
                     <form action="/#get-started" method="get" >
                         <input class="btn-submit-lg page-scroll" type="submit" value="Try Again" style="align-self: center">
                     </form>

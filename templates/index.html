@@ -1,4 +1,16 @@
 {% extends 'base.html' %}
+    {% block menu %}
+        {% include 'menu-full.html' %}
+    {% endblock %}
+
+    {% block header %}
+        {% include 'header-video.html' %}
+    {% endblock %}
+
     {% block body %}
-        {% include 'info-body.html' %}
+        {% include 'block-about.html' %}
+
+        {% include 'block-start.html' %}
+
+        {% include 'block-contacts.html' %}
     {% endblock %}
