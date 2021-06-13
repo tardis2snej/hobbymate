@@ -1,0 +1,377 @@
+@media (min-width: 768px) {
+	/* General Styles */
+	.p-heading {
+		width: 85%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	/* Navigation */
+	.navbar-custom {
+		padding: 2.125rem 1.5rem 2.125rem 2rem;
+		box-shadow: none;
+        background: transparent;
+	}
+
+	.navbar-custom .navbar-brand.logo-text {
+		color: #fff;
+	}
+
+	.navbar-custom .navbar-nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.navbar-custom .nav-item .nav-link {
+		padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+	}
+
+	.navbar-custom .nav-item .nav-link:hover,
+	.navbar-custom .nav-item .nav-link.active {
+		color: #d38d2b;
+	}
+
+	.navbar-custom.top-nav-collapse {
+        padding: 0.375rem 1.5rem 0.375rem 2rem;
+		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+		background-color: #6d3911;
+	}
+
+	.navbar-custom.top-nav-collapse .navbar-brand.logo-text {
+		color: #fff;
+	}
+
+	.navbar-custom.top-nav-collapse .nav-item .nav-link {
+		color: #fff;
+	}
+
+	.navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
+	.navbar-custom.top-nav-collapse .nav-item .nav-link.active {
+		color: #d38d2b;
+	}
+
+	.navbar-custom .dropdown-menu {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-top: 0.75rem solid rgba(0, 0, 0, 0);
+		border-radius: 0.25rem;
+		box-shadow: 0 0.25rem 0.375rem 0 rgba(0, 0, 0, 0.03);
+	}
+
+	.navbar-custom.top-nav-collapse .dropdown-menu {
+		border-top: 0.125rem solid rgba(0, 0, 0, 0);
+	}
+
+	.navbar-custom .dropdown-item {
+		padding-top: 0.25rem;
+		padding-bottom: 0.25rem;
+	}
+
+	.navbar-custom .dropdown-items-divide-hr {
+		width: 84%;
+	}
+
+	/* Header */
+	.header .header-content {
+		padding-top: 13rem;
+		padding-bottom: 7.5rem;
+	}
+
+	.header h1 {
+		font: 700 3.5rem/4rem "Montserrat", sans-serif;
+	}
+
+	/* Results display */
+	.filter .element-item .element-item-overlay {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	.filter .element-item:hover .element-item-overlay {
+		opacity: 1;
+	}
+
+	/* About */
+	.counter #counter {
+		text-align: left;
+	}
+
+	.counter #counter .cell {
+	}
+
+	/* Form */
+	.form-2 .list-unstyled li {
+		display: inline-block;
+		margin-right: 1rem;
+	}
+
+	.form-2 .list-unstyled .address {
+		display: block;
+	}
+}
+
+@media (min-width: 992px) {
+
+	/* General Styles */
+	.p-heading {
+		width: 65%;
+	}
+
+	/* Navigation */
+	.navbar-custom .social-icons {
+		display: block;
+		margin-left: 0.5rem;
+	}
+
+	.navbar-custom .fa-stack {
+		margin-left: 0.375rem;
+		font-size: 0.8125rem;
+	}
+
+	.navbar-custom .fa-stack .hexagon {
+		width: 1.625rem;
+		height: 1.625rem;
+		position: absolute;
+		background: url('../images/logo.png') center center no-repeat;
+		background-size: 1.625rem 1.625rem;
+		transition: all 0.2s ease;
+	}
+
+	.navbar-custom .fa-stack:hover .hexagon {
+		background: url('../images/logo.png') center center no-repeat;
+		background-size: 1.625rem 1.625rem;
+	}
+
+	.navbar-custom .fa-stack-1x {
+		font-size: 0.6875rem;
+		line-height: 1.625rem;
+		color: #fff;
+		transition: all 0.2s ease;
+	}
+
+	.navbar-custom .fa-stack:hover .fa-stack-1x {
+		color: #d38d2b;
+	}
+
+	/* Header */
+	.header .header-content {
+		padding-top: 14rem;
+		padding-bottom: 15rem;
+	}
+
+	.header .text-container {
+		margin-top: 0rem;
+	}
+	/* end of header */
+
+	/* About */
+	.basic-1 {
+		padding-top: 6.875rem;
+	}
+
+	.basic-1 .text-container {
+		margin-bottom: 0;
+	}
+
+	/* Description */
+	.cards-1 .card {
+		display: inline-block;
+		max-width: 17.5rem;
+		text-align: center;
+		vertical-align: top;
+	}
+
+	.cards-1 div.card:nth-child(3n+2) {
+		margin-right: 2.5rem;
+		margin-left: 2.5rem;
+	}
+
+	/* Services */
+	.cards-2 .card {
+		max-width: 18.25rem;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.cards-2 .col-lg-12 div.card:nth-child(3n+2) {
+		margin-right: 1.25rem;
+		margin-left: 1.25rem;
+	}
+
+	/* Details 1 */
+	.accordion {
+		height: 34.625rem;
+	}
+
+	.accordion .area-1 {
+		width: 50%;
+		height: 100%;
+		display: inline-block;
+	}
+
+	.accordion .area-2 {
+		width: 50%;
+		height: 100%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.accordion .accordion-container {
+		max-width: 88%;
+		margin-left: 2rem;
+		padding-bottom: 0;
+	}
+
+	.accordion .accordion-title {
+		width: 85%;
+	}
+
+	/* About */
+	.counter .image-container {
+		margin-bottom: 0;
+	}
+
+	/* Form */
+    .form-1 {
+		padding-top: 7rem;
+	}
+
+	.form-1 .text-container {
+		margin-bottom: 0;
+	}
+
+	.form-2 {
+		padding-top: 6.875rem;
+	}
+
+	.form-2 .text-container {
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	/* General Styles */
+	.p-heading {
+		width: 55%;
+	}
+
+	/* Navigation */
+	.navbar-custom {
+		padding-right: 5rem;
+		padding-left: 5rem;
+	}
+
+	.navbar-custom.top-nav-collapse {
+		padding-right: 5rem;
+		padding-left: 5rem;
+	}
+
+	/* Header */
+	.header .header-content {
+		padding-top: 14.75rem;
+		padding-bottom: 17.5rem;
+	}
+
+	/* About */
+	.basic-1 .text-container {
+		margin-top: 1.875rem;
+		margin-right: 3rem;
+	}
+
+	/* Description */
+	.cards-1 .card {
+		max-width: 21rem;
+	}
+
+	.cards-1 div.card:nth-child(3n+2) {
+		margin-right: 2.875rem;
+		margin-left: 2.875rem;
+	}
+
+	/* Services */
+	.cards-2 .card {
+		max-width: 20.875rem;
+	}
+
+	.cards-2 .card-body {
+		padding: 2.25rem 2.5rem 2.125rem 2.5rem;
+	}
+
+	.cards-2 .col-lg-12 div.card:nth-child(3n+2) {
+		margin-right: 3rem;
+		margin-left: 3rem;
+	}
+	/* end of services */
+
+
+	/* Details 1 */
+	.accordion .accordion-container {
+		max-width: 28rem;
+		margin-left: 5rem;
+	}
+
+	/* Form */
+	.form-1 .text-container {
+		margin-top: 1.375rem;
+		margin-right: 1.75rem;
+		margin-left: 3rem
+	}
+
+	.form-1 form {
+		margin-left: 1.75rem;
+		margin-right: 3rem
+	}
+
+	/* Results */
+	.filter .element-item {
+		width: 350px; /* to eliminate grid overflow problem on hard refresh */
+		height: 550px;
+	}
+
+	.filter .element-item .element-item-overlay span {
+		top: 45%;
+	}
+
+	/* About */
+	.counter {
+		padding-bottom: 6.125rem;
+	}
+
+	.counter .image-container {
+		margin-right: 1.5rem;
+	}
+
+	.counter .text-container {
+		margin-top: 0.375rem;
+		margin-right: 2.5rem;
+		margin-left: 2rem;
+	}
+
+	/* Contact */
+	.form-2 .text-container {
+		margin-top: 0.875rem;
+		margin-right: 1.5rem;
+	}
+
+	.form-2 form {
+		margin-left: 1.5rem;
+	}
+
+	/* Footer */
+	.footer .text-container.about {
+		margin-right: 5rem;
+	}
+}
+
+@media (min-width: 1600px) {
+	/* Navigation */
+	.navbar-custom {
+		padding-right: 12rem;
+		padding-left: 12rem;
+	}
+
+	.navbar-custom.top-nav-collapse {
+		padding-right: 12rem;
+		padding-left: 12rem;
+	}
+}

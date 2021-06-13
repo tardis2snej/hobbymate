@@ -1,0 +1,77 @@
+.accordion .area-1 {
+	height: 27rem;
+	background: url('../images/get-started.jpeg') center center no-repeat;
+	background-size: cover;
+}
+
+.accordion .accordion-container {
+	max-width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 6.375rem;
+	padding-bottom: 1.5rem;
+}
+
+.accordion h2 {
+	margin-bottom: 1.625rem;
+}
+
+.accordion .item {
+	margin-bottom: 2rem;
+}
+
+.accordion h4 {
+	margin-bottom: 0;
+}
+
+.accordion span[aria-expanded="true"] .circle-numbering,
+.accordion span[aria-expanded="false"] .circle-numbering {
+	display: inline-block;
+	width: 2.25rem;
+	height: 2.25rem;
+	margin-right: 0.875rem;
+	border: 0.125rem solid #d38d2b;
+	border-radius: 50%;
+	background-color: #d38d2b;
+	color: #fff;
+	font: 700 1rem/2.125rem "Montserrat", sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.accordion span[aria-expanded="false"] .circle-numbering {
+	border: 0.125rem solid #484a46;
+	background-color: transparent;
+	color: #484a46;
+}
+
+.accordion .item:hover span[aria-expanded="false"] .circle-numbering {
+	border: 0.125rem solid #d38d2b;
+	color: #d38d2b;
+}
+
+.accordion .accordion-title {
+	display: inline-block;
+	width: 70%;
+	margin-top: 0.125rem;
+	margin-bottom: 0.25rem;
+	color: #484a46;
+	font: 700 1.25rem/1.75rem "Montserrat", sans-serif;
+	vertical-align: middle;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.accordion .item:hover .accordion-title {
+	color: #d38d2b;
+}
+
+.accordion span[aria-expanded="true"] .accordion-title {
+	color: #d38d2b;
+}
+
+.accordion .accordion-body {
+	margin-left: 3.125rem;
+}

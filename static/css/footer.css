@@ -1,0 +1,19 @@
+.footer {
+	padding-top: 5rem;
+	background-color: #6d3911;
+}
+
+.footer .text-container {
+	margin-bottom: 2.25rem;
+}
+
+.footer h4 {
+	margin-bottom: 0.75rem;
+	color: #fff;
+}
+
+.footer p,
+.footer ul {
+	font-size: 0.875rem;
+	line-height: 1.375rem;
+}
