@@ -35,15 +35,21 @@
                                         <a class="button is-checked" data-filter="*"><span>show all</span></a>
                                     </div> <!-- end of button group -->
 
-                                <div class="grid" style="text-align: center">
-                                    {% for post in posts %}
-                                        <div class="element-item {{ post['keywords'] }}">
-                                              <blockquote class="instagram-media" data-instgrm-version="2">
-                                                <a href="{{ post['post_url'] }}"></a>
-                                              </blockquote>
-                                        </div>
-                                    {% endfor %}
-                                </div> <!-- end of grid -->
+                                    <div class="paginator" onclick="pagination(event)"></div>
+
+                                    <div class="page">
+                                        <div style="text-align: center">
+                                            {% for post in posts %}
+                                                <div data-num={{loop.index}} class="num" >
+                                                    <div class="element-item {{ post['keywords'] }}">
+                                                          <blockquote class="instagram-media" data-instgrm-version="2">
+                                                            <a href="{{ post['post_url'] }}"></a>
+                                                          </blockquote>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        </div> <!-- end of grid -->
+                                    </div>
                                 <!-- end of filter -->
                             </div> <!-- end of col -->
                         </div> <!-- end of row -->

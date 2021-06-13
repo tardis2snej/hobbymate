@@ -1,0 +1,16 @@
+.num {
+  display: none;
+}
+.paginator {
+  line-height: 150%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.paginator > span {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.paginator_active {
+  color: #d38d2b;
+}
